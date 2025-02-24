@@ -1,0 +1,9 @@
+services:
+  web:
+    image: localization-api
+    container_name: localization-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
